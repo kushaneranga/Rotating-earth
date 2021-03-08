@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.galaxy {
+    background-image: url("Img/cosmos-1845140_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.earth {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("Img/earth-11048_1920.jpg");
+    background-repeat: no-repeat;
+    box-shadow: -20px -20px 50px 2px rgb(0, 14, 22) inset, 0 0 20px 2px rgb(0, 14, 22);
+    animation:spin 20s linear alternate infinite;
+}
+
+@keyframes spin{
+    100%{background-position: 100%;}
+}
